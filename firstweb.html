@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>my website</title>
+        <link rel="stylesheet" href="firstwebstyle.css">
+    </head>
+    <body>
+        <nav >
+            <ul class="topnav" id="dropDownClick">
+                <li><a href="#home">home</a></li>
+                <li><a href="#contacts">CONTACTS</a></li>
+                <li><a href="#news">NEWS</a></li>
+                <li class="topnav-right"><a href="#signin" >SIGN IN</a></li>
+                <li class="topnav-right"><a href="#signup" >SIGN UP</a></li>
+                <li class="dropDownIcon"><a href="javascript:void(0);"  onclick="dropDownMenu()">&#9776;</a></li>
+                
+            </ul>
+        </nav>
+        <div class="container" id="section-1-gradient">
+            <div class="row">
+                <div class="col-6">
+                    <div class="leftSide-col">
+                    <h1 class="large">Crazy Radness</h1>
+                    <h1 class="large">Made for Developers</h1>
+                    </div >
+                    <form>
+                        <div class="leftSide-col">
+                            <h2>Username</h2>
+                            <input class="inputbox" name="username" type="text" placeholder="Username">
+                            <h2>Password</h2>
+                            <input class="inputbox" name="password" type="text" placeholder="Password">
+                        </div>
+                    </form>
+                </div>               
+                <div class="col-6">
+                    <div class="rightSide-col">
+                        <div class="videoContainer">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rYeSA1vgIUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>    
+                    </div>    
+                </div>
+            
+            </div>
+        
+        </div>
+        <header>
+            <h1 class="section2Header">The Standards of Awesomeness</h1>
+        </header>
+        <div class="container" >
+            <div class="row boxes">
+                <div class="col-4">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="desert.png" alt="icon">
+                        </div>
+                        <label>Chat with me</label>
+                        <p>We will start right under the first container containing the first part of the website, by building a new container. At the top of this container we will place our header tag which acts like a container of its own.</p>
+                    </div>
+                </div>               
+                <div class="col-4">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="desert.png" alt="icon">
+                        </div>
+                        <label>Learn to code</label>
+                        <p>We will start right under the first container containing the first part of the website, by building a new container. At the top of this container we will place our header tag which acts like a container of its own.</p>
+                    </div>
+                </div>              
+                <div class="col-4">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="desert.png" alt="icon">
+                        </div>
+                        <label>Chat with me</label>
+                        <p>We will start right under the first container containing the first part of the website, by building a new container. At the top of this container we will place our header tag which acts like a container of its own.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="learnMore">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <article>
+                        <p>
+                            This section is quite similar and much easier than what we did earlier. To build this we are going to start a new container containing two columns of unequal column size i.e. 7 and 5. One will contain the text and the other an image.
+
+                        </p>
+                    </article>
+                </div>
+                <div class="col-5">
+                    <div class="slopeIcon">
+                        <img src="download.jpg"  alt="photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footsy">
+            <div class="row">
+                <div class="col-3 mobileStack">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About </li>
+                        <li>Blogs</li> 
+                        <li>Careers</li>
+                    </ul>
+                </div>                
+                <div class="col-3 mobileStack">
+                    <h1>Products</h1>
+                    <ul>
+                        <li>Computers </li>
+                        <li>IPads</li> 
+                        <li>IPhones</li>
+                    </ul>
+                </div>        
+                <div class="col-3 mobileStack">
+                    <h1>Learn More</h1>
+                    <ul>
+                        <li>Developers </li>
+                        <li>Designers</li> 
+                        <li>Hackers</li>
+                    </ul>
+                </div>
+                <div class="col-3 mobileStack">
+                    <h1>Support</h1>
+                    <ul>
+                        <li>Help </li>
+                        <li>QA</li> 
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        <script>
+            function dropDownMenu(){
+                var x=document.getElementById("dropDownClick");
+                if (x.className==="topnav") {
+                    x.className ="topnav responsive";
+                }
+                else
+                {
+                    x.className ="topnav";
+                }
+            }
+        </script>
+
+    </body>
+</html>
